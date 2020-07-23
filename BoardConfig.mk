@@ -14,7 +14,7 @@
 # limitations under the License.
 
 ### INHERIT FROM YOSHIRO
-include device/sony/yoshino/BoardConfigPlatform.mk
+include device/sony/yoshino-common/BoardConfigPlatform.mk
 include vendor/sony/lilac/BoardConfigVendor.mk
 
 DEVICE_PATH := device/sony/lilac
@@ -50,14 +50,8 @@ TARGET_SCREEN_DENSITY := 320
 ### LIGHTS
 TARGET_PROVIDES_LIBLIGHT := true
 
-### MODEM
-BOARD_MODEM_CUSTOMIZATIONS := true
-
-### IMS
-BOARD_IMS_CAMERA := true
-
-### VNDK
-BOARD_VNDK_VERSION := current
+### Sound Trigger
+BOARD_SUPPORTS_SOUND_TRIGGER_HAL := true
 
 ### SYSTEM PROPS
 # Add device-specific ones
