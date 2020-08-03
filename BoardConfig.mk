@@ -53,6 +53,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 ### Sound Trigger
 BOARD_SUPPORTS_SOUND_TRIGGER_HAL := true
 
+### VNDK
+BOARD_VNDK_VERSION := current
+
 ### SYSTEM PROPS
 # Add device-specific ones
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
